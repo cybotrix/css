@@ -1,0 +1,222 @@
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+
+body{
+    margin:0px;
+}
+
+#container{
+    min-height:500px;
+    width:80%;
+    margin:auto;
+}
+
+footer{
+    padding:20px 10% 20px;
+    background-color:rgb(71, 141, 97);
+    color:white;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+footer div{
+    padding:0px 30px 0px;
+}
+
+footer h3{
+    color:orange;
+    font-size:27px;
+}
+
+p{
+    text-align:justify;
+}
+
+h1{
+    color:red;
+    font-size:80px;
+    text-align:center;
+    margin:18px;
+}
+
+#topnav{
+    margin:0px;
+    background-image:linear-gradient(to left, black, blue);
+    list-style-type:none;
+    text-align:center;
+    top:0px;
+    position:sticky;
+}
+
+#topnav li{
+    display:inline-block;
+    padding:18px 40px 18px;
+}
+
+#topnav li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+
+#topnav li:hover{
+    background-color:yellow;
+    cursor:pointer;
+}
+
+#topnav li:hover a{
+    color:black;
+}
+
+.left{ text-align:left; }
+.right{ text-align:right; }
+.center{ text-align:center; }
+.justify{ text-align:justify; }
+.top20{ margin-top:20px !important; }
+
+
+header{
+    padding:10px 10% 10px;
+    font-weight:bold;
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+@keyframes mybanner {
+    25%{ background-image:url('2.jpg'); }
+    50%{ background-image:url('3.jpg'); }
+    75%{ background-image:url('4.jpg'); }
+}
+
+#banner{
+    background-image:url('1.jpg');
+    background-size:100% 100%;
+    height:450px;
+    animation:mybanner;
+    animation-iteration-count:infinite;
+    animation-duration:10s;
+}
+
+.homepic{
+    margin:2%;
+    width:20.5%;
+    height:250px;
+    box-shadow:5px 10px 10px grey;
+    cursor:pointer;
+}
+
+.homepic:hover{
+    opacity:0.5;
+}
+
+.service{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+
+.myservice{
+    margin:15px;
+    padding:7px;
+    text-align:justify;
+    word-break:break-all;
+}
+
+.myservice .fa, .myservice .fab{
+    color:rgb(48, 216, 90);
+}
+
+.myservice h3{
+    color:rgb(242, 97, 24);
+}
+
+fieldset{
+    margin:30px auto 30px;
+    width:400px;
+    padding:20px;
+    border:1px solid red;
+    border-radius:10px 50px 10px 50px;
+}
+
+legend{
+    background-color:purple;
+    color:white;
+    font-size:20px;
+    padding:6px 15px 6px;
+    border-radius:5px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:30% 70%;
+    padding:15px;
+}
+
+.smallinput{
+    height:28px;
+}
+
+.biginput{
+    height:70px;
+    resize:none;
+}
+
+button{
+    margin-top:15px;
+    background:darkcyan;
+    color:white;
+    padding:6px 10px 6px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    box-shadow:0px 0px 5px darkcyan;
+}
+
+button:focus{
+    background:black;
+}
+
+/* media query for small device */
+@media screen and (min-width:1px) and (max-width:600px){
+    header{ grid-template-columns:auto auto; }
+    #topnav{ padding:0px; }
+    #topnav li{ padding:5px; }
+    #topnav li a{ font-size:13px; }
+    #banner{ height:200px; }
+    h1{ font-size:40px; }
+    .homepic{ width:96%; }
+    footer{ grid-template-columns:auto;}
+    .service{ grid-template-columns:auto; }
+    fieldset{ width:80%; }
+}
+
+
+/* media query for medium device */
+@media screen and (min-width:600px) and (max-width:900px){
+    header{ grid-template-columns:auto auto; }
+    #topnav{ padding:0px; }
+    #topnav li{ padding:10px; }
+    #topnav li a{ font-size:16px; }
+    #banner{ height:250px; }
+    h1{ font-size:50px; }
+    .homepic{ width:44%; }
+    footer{ grid-template-columns:auto;}
+    .service{ grid-template-columns:auto; }
+    fieldset{ width:60%; }
+}
+
+
+/* media query for medium device */
+@media screen and (min-width:900px) and (max-width:1200px){
+    header{ grid-template-columns:60% 40%; }
+    #topnav li{ padding:15px; }
+    #topnav li a{ font-size:20px; }
+    #banner{ height:300px; }
+    h1{ font-size:60px; }
+    .homepic{ width:28%; }
+    footer{ grid-template-columns:auto auto;}
+    .service{ grid-template-columns:auto auto; }
+}
+
+

@@ -1,0 +1,40 @@
+
+body{ 
+    margin:0px;
+}
+
+#mainmenu{
+    margin:0px;
+    background-color:purple;
+}
+
+#mainmenu li{
+    display:inline-block;
+    padding:18px 40px 18px;
+    color:white;
+    font-size:22px;
+}
+
+#mainmenu li:hover{
+    background-color:darkorange;
+    cursor:pointer;
+}
+
+.submenu{
+    padding:0px !important;
+    background-color:black;
+    position:absolute;
+    margin-left: -40px !important;
+    margin-top: 17px;
+    display:none;
+    min-width:250px;
+}
+
+.submenu li{
+    display:block !important;
+    margin-left: 0px !important;
+}
+
+#mainmenu li:hover .submenu{
+    display:block;
+} 

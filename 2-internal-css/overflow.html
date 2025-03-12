@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #service1{
+            height:150px;
+            width:200px;
+            margin:50px;
+            background:red;
+            display:inline-block;
+            padding:20px;
+            overflow:auto;
+        }
+
+        #service2{
+            height:150px;
+            width:200px;
+            margin:50px;
+            background:pink;
+            display:inline-block;
+            padding:20px;
+            overflow-x:auto;
+            overflow-y:hidden;
+        }
+
+        #service3{
+            height:150px;
+            width:200px;
+            margin:50px;
+            background:pink;
+            display:inline-block;
+            padding:20px;
+            overflow-x:hidden;
+            overflow-y:auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> What is Overflow in CSS </h1>
+
+    <p id="service1">
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+    </p>
+
+    <p id="service2">
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+    </p>
+
+    <p id="service3">
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+        dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg dfg
+    </p>
+
+</body>
+</html>

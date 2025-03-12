@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            font-size:100px;
+            text-align:center;
+        }
+
+        div{
+            font-size:35px;
+            margin:30px 0px 30px;
+        }
+
+        section{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:auto auto auto auto;
+        }
+
+        /* media query to current window width */
+
+        @media screen and (min-width:1px) and (max-width:600px) {
+            h1{ color:blue; font-size:45px; }
+            section{ grid-template-columns:auto; }
+        }
+
+
+        @media screen and (min-width:600px) and (max-width:900px) {
+            h1{ color:purple; font-size:60px; }
+            section{ grid-template-columns:auto auto; }
+        }
+
+
+        @media screen and (min-width:900px) and (max-width:1200px) {
+            h1{ color:green; font-size:70px; }
+            section{ grid-template-columns:auto auto auto; }
+        }
+    </style>
+</head>
+<body>
+    <h1> CSS Media Query </h1>
+
+    <section>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+        <div> Bangalore </div>
+    </section>
+</body>
+</html>
